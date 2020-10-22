@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Transformers</string>
+    <string name="create">Create</string>
+    <string name="endurance">Endurance:</string>
+    <string name="rank">Rank:</string>
+    <string name="firepower">Firepower</string>
+    <string name="name">Name:</string>
+    <string name="decepticon">Decepticon</string>
+    <string name="autobot">Autobot</string>
+    <string name="skill">Skill:</string>
+    <string name="courage">Courage:</string>
+    <string name="speed">Speed:</string>
+    <string name="strength">Strength:</string>
+    <string name="intelligence">Intelligence:</string>
+</resources>

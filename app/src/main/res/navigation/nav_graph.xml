@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewTransformersFragment">
+
+    <fragment
+        android:id="@+id/viewTransformersFragment"
+        android:name="mr.fugugames.com.transformers.viewTransformers.ViewTransformersFragment"
+        android:label="view_transformers_fragment"
+        tools:layout="@layout/view_transformers_fragment" >
+        <action
+            android:id="@+id/to_createTransformerFragment"
+            app:destination="@id/createTransformerFragment"
+            app:enterAnim="@android:anim/fade_in" >
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/createTransformerFragment"
+        android:name="mr.fugugames.com.transformers.createTransformers.CreateTransformerFragment"
+        android:label="create_transformer_fragment"
+        tools:layout="@layout/create_transformer_fragment" >
+        <action
+            android:id="@+id/to_viewTransformersFragment"
+            app:destination="@id/viewTransformersFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+    </fragment>
+</navigation>
